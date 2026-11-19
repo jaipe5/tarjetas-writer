@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Tarjetas de repaso de Writer</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f2f5fa;color:#172641;font:1rem/1.55 system-ui,sans-serif}
+header,main{max-width:72rem;margin:auto;padding:1.25rem}
+h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.1;margin:.4em 0}
+main{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,24rem),1fr));gap:1rem;padding-top:0}
+section{background:white;border:1px solid #cbd7e7;border-radius:1rem;padding:1rem}
+h2{font-size:1.1rem;margin:0 0 .65rem}
+details{margin:.45rem 0;background:#edf3fd;border-radius:.5rem}
+summary{cursor:pointer;padding:.7rem;color:#153b78;font-weight:600}
+details p{margin:0;padding:0 .75rem .75rem 1.7rem}
+button{font:inherit;color:white;background:#153b78;border:0;border-radius:.5rem;padding:.5rem .8rem;cursor:pointer}
+:focus-visible{outline:3px solid #0869c4;outline-offset:3px}
+</style></head><body>
+<header><h1>Repaso de LibreOffice Writer</h1><p>Intenta responder. Haz clic en la pregunta para ver la respuesta y vuelve a hacer clic para ocultarla.</p>
+<p><span id="count" aria-live="polite">0 de 48 tarjetas repasadas</span> · <button type="button" id="reset">Reiniciar repaso</button></p></header>
+<main><section><h2>Entorno y personalización</h2><details><summary>¿Dónde aparecen «Archivo», «Editar» y «Ver»?</summary><p>En la barra de menús.</p></details>
+<details><summary>¿Qué menú permite mostrar u ocultar barras de herramientas?</summary><p>Ver.</p></details>
+<details><summary>¿Qué control amplía la vista del documento?</summary><p>El zoom.</p></details></section>
+<section><h2>Introducción y edición de textos</h2><details><summary>¿Qué tecla inicia un nuevo párrafo?</summary><p>Intro.</p></details>
+<details><summary>¿Qué atajo deshace la última acción?</summary><p>Ctrl + Z.</p></details>
+<details><summary>¿Qué atajo pega un texto copiado?</summary><p>Ctrl + V.</p></details></section>
+<section><h2>Caracteres y tipografía</h2><details><summary>¿En qué unidad se mide el tamaño de letra?</summary><p>En puntos (pt).</p></details>
+<details><summary>¿Qué formato inclina las letras?</summary><p>La cursiva.</p></details>
+<details><summary>¿Qué formato usarías para escribir el 2 de H₂O?</summary><p>Subíndice.</p></details></section>
+<section><h2>Párrafos, alineación, sangrías y espaciado</h2><details><summary>¿Qué alineación ajusta el texto a ambos lados?</summary><p>La justificada.</p></details>
+<details><summary>¿Qué desplaza solo el inicio de la primera línea de un párrafo?</summary><p>La sangría de primera línea.</p></details>
+<details><summary>¿Cómo se llama la distancia entre las líneas de un párrafo?</summary><p>Interlineado.</p></details></section>
+<section><h2>Tabulaciones y listas</h2><details><summary>¿Para qué sirve una tabulación?</summary><p>Para alinear texto en una posición fija.</p></details>
+<details><summary>¿Qué lista usarías para ordenar los pasos de una práctica?</summary><p>Una lista numerada.</p></details>
+<details><summary>¿Qué lista usarías para enumerar materiales sin un orden fijo?</summary><p>Una lista con viñetas.</p></details></section>
+<section><h2>Página, márgenes y orientación</h2><details><summary>¿Cómo se llama la orientación en la que la página es más ancha que alta?</summary><p>Horizontal.</p></details>
+<details><summary>¿Qué son los márgenes?</summary><p>Los espacios entre los bordes de la página y el área de texto.</p></details>
+<details><summary>¿Qué tamaño de papel mide 21 × 29,7 cm?</summary><p>A4.</p></details></section>
+<section><h2>Saltos, encabezados, pies y numeración</h2><details><summary>¿Qué atajo inserta un salto de página?</summary><p>Ctrl + Intro.</p></details>
+<details><summary>¿Dónde pondrías el número de página para que aparezca abajo?</summary><p>En el pie de página.</p></details>
+<details><summary>¿Dónde pondrías el nombre del módulo para que se repita arriba?</summary><p>En el encabezado de página.</p></details></section>
+<section><h2>Estilos de párrafo y carácter</h2><details><summary>¿Qué tipo de estilo se aplica a un párrafo completo?</summary><p>Un estilo de párrafo.</p></details>
+<details><summary>¿Qué tipo de estilo aplicarías solo a una palabra seleccionada?</summary><p>Un estilo de carácter.</p></details>
+<details><summary>Si modificas el estilo «Título 1», ¿qué párrafos se actualizan?</summary><p>Los que usan ese estilo.</p></details></section>
+<section><h2>Tablas y formato de celdas</h2><details><summary>¿Cómo se llama el cruce entre una fila y una columna?</summary><p>Celda.</p></details>
+<details><summary>¿Qué propiedad cambia el color interior de una celda?</summary><p>El color de fondo.</p></details>
+<details><summary>¿Cómo se llaman las líneas que delimitan las celdas?</summary><p>Bordes.</p></details></section>
+<section><h2>Tablas complejas y distribución de información</h2><details><summary>¿Qué acción convierte varias celdas en una sola?</summary><p>Combinar celdas.</p></details>
+<details><summary>¿Qué fila conviene repetir en cada página de una tabla larga?</summary><p>La fila de encabezado.</p></details>
+<details><summary>¿Qué acción reparte una celda en varias?</summary><p>Dividir celdas.</p></details></section>
+<section><h2>Inserción, ajuste y anclaje de imágenes</h2><details><summary>¿Qué propiedad controla cómo se coloca el texto alrededor de una imagen?</summary><p>El ajuste de texto.</p></details>
+<details><summary>¿Qué anclaje hace que la imagen se comporte como una letra en la línea?</summary><p>Como carácter.</p></details>
+<details><summary>¿Qué herramienta oculta los bordes sobrantes de una imagen?</summary><p>Recortar.</p></details></section>
+<section><h2>Escáner y reconocimiento de texto</h2><details><summary>¿Qué hace un escáner con una hoja de papel?</summary><p>La convierte en una imagen digital.</p></details>
+<details><summary>¿Qué tecnología convierte el texto de una imagen en texto editable?</summary><p>El OCR.</p></details>
+<details><summary>¿Qué conviene revisar después de aplicar OCR?</summary><p>Las letras, tildes y números reconocidos.</p></details></section>
+<section><h2>Secciones, columnas y composición</h2><details><summary>¿Qué formato reparte el texto en bloques verticales, como en un periódico?</summary><p>El formato en columnas.</p></details>
+<details><summary>¿Qué puedes insertar para aplicar columnas solo a una parte del documento?</summary><p>Una sección.</p></details>
+<details><summary>¿Cómo se llama el espacio que separa dos columnas?</summary><p>Espaciado entre columnas.</p></details></section>
+<section><h2>Índices automáticos y estructura</h2><details><summary>¿Qué estilos ayudan a generar un índice automático?</summary><p>Título 1, Título 2 y los demás niveles de título.</p></details>
+<details><summary>¿Qué debes hacer con el índice si cambian los títulos o las páginas?</summary><p>Actualizarlo.</p></details>
+<details><summary>¿Qué estilo usarías para un subtítulo que depende de «Título 1»?</summary><p>Título 2.</p></details></section>
+<section><h2>Notas, referencias y enlaces</h2><details><summary>¿Dónde aparece una nota al pie?</summary><p>En la parte inferior de la página.</p></details>
+<details><summary>¿Qué puedes crear para saltar a un marcador del mismo documento?</summary><p>Un hiperenlace interno.</p></details>
+<details><summary>¿Qué permite citar una figura numerada dentro del documento?</summary><p>Una referencia cruzada.</p></details></section>
+<section><h2>Buscar, reemplazar y revisar</h2><details><summary>¿Qué atajo abre «Buscar y reemplazar»?</summary><p>Ctrl + H.</p></details>
+<details><summary>¿Qué botón cambia todas las coincidencias de una vez?</summary><p>Reemplazar todo.</p></details>
+<details><summary>¿Qué herramienta señala posibles faltas mientras escribes?</summary><p>La revisión ortográfica automática.</p></details></section></main>
+<script>
+const cards = [...document.querySelectorAll('details')];
+const reviewed = new Set();
+const count = document.querySelector('#count');
+function updateProgress() {
+  count.textContent = reviewed.size + ' de ' + cards.length + ' tarjetas repasadas';
+}
+cards.forEach(card => card.addEventListener('toggle', () => {
+  if (card.open) {
+    reviewed.add(card);
+    updateProgress();
+  }
+}));
+document.querySelector('#reset').addEventListener('click', () => {
+  cards.forEach(card => { card.open = false; });
+  reviewed.clear();
+  updateProgress();
+});
+</script></body></html>
